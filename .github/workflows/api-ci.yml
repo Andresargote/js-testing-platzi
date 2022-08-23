@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 14
           cache: "npm"
-          cache-dependency-path: examples/api/package-lock.json
+          cache-dependency-path: /examples/api/package-lock.json
       - name: install
         shell: bash
         run: npm ci
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 14
           cache: "npm"
-          cache-dependency-path: examples/api/package-lock.json
+          cache-dependency-path: /examples/api/package-lock.json
       - name: install
         shell: bash
         run: npm ci
