@@ -1,4 +1,4 @@
-version: '3.3'
+version: "3.3"
 
 services:
   mongo:
@@ -6,5 +6,13 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root123
+    ports:
+      - 27017:27017
+
+  mongo-e2e:
+    image: mongo:4.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: test
+      MONGO_INITDB_ROOT_PASSWORD: test123
     ports:
       - 27017:27017
